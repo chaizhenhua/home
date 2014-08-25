@@ -22,7 +22,8 @@ Plugin 'Emmet.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
+au FileType python setl sw=4 sts=4 et
+au FileType java setl sw=4 sts=4 et
 set autoindent
 set smartindent
 set tabstop=2
@@ -35,3 +36,6 @@ syntax on
 nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 let g:EasyMotion_smartcase = 1
+
+" vim-json
+let g:vim_json_syntax_conceal = 1
